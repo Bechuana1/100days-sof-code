@@ -1,0 +1,33 @@
+Day 11:
+Review the basics of functions in your chosen language.
+Practice writing your own functions, including parameters and return values.
+Day 12:
+Review the basics of arrays in your chosen language.
+Practice manipulating arrays, including adding and removing elements, and iterating over an array.
+Day 13:
+Review the basics of objects in your chosen language.
+Practice working with objects, including creating objects, adding properties and methods, and accessing properties and methods.
+Day 14:
+Study and practice using arrays of objects.
+Practice combining arrays and objects to work with more complex data.
+Day 15:
+Study and practice using nested objects and arrays.
+Practice traversing and manipulating nested data structures.
+Day 16:
+Study and practice using the JSON (JavaScript Object Notation) format for data transfer.
+Practice parsing and stringifying JSON data.
+Day 17:
+Practice using the JSON data format in combination with HTTP requests to retrieve data from an API.
+Practice working with data returned from an API.
+Day 18:
+Study and practice using the JavaScript fetch() function to retrieve data from an API.
+Practice working with promises to handle asynchronous data.
+Day 19:
+Study and practice using the JavaScript async/await syntax to handle asynchronous code.
+Practice making asynchronous requests to retrieve data from an API.
+Day 20:
+
+Practice working with data retrieved from an API in a web application.
+Build a simple web application that displays data from an API.
+This is just a sample plan, you can adjust it to suit your needs and skills. Remember to practice and show what you've learned. You can also use online resources and tutorials to help you with the practice.
+
