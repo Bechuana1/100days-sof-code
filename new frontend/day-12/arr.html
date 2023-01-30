@@ -19,6 +19,11 @@
             <p> returns elements that pass a given implemantation from an array.</p>
             <p id="filter"></p>
         </ul>
+        <ul>
+            <li>Array.reduce()</li>
+            <p> reduces the array to a single value.</p>
+            <p id="reduce"></p>
+        </ul>
 
     </main>
 
@@ -34,7 +39,12 @@
         let result = fill.filter((el) => el%2 === 0);
 
         document.getElementById('filter').innerHTML = result;
-        
+
+        //the reduce function
+        let reduce  = fill.reduce((total, item) => total + item , 0);
+        document.getElementById('reduce').innerHTML = reduce;
+
+
 
 
     </script>
