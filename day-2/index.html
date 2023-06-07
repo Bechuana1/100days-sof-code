@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day two</title>
+</head>
+<body>
+    <h1>Array methods</h1>
+
+    <h3>1. <code>Array.lenght()</code></h3>
+    <p>This returns tht length of the Array. Always remember counting starts at [0] for Arrays</p>
+    <code>
+        <pre>
+            let fruits = ['mangoes','kiwi' , 'passion'];
+            console.log(fruits.length);
+
+            //output : 3
+        </pre>
+    </code>
+
+
+    <h3>2. <code> Array.push()</code></h3>
+    <p>Add element to the end of  Array and takes O(1)</p>
+
+    <code>
+        <pre>
+           
+            fruits.push('citrus');
+            console.log(fruits);
+
+            //output : ['mangoes', 'kiwi', 'passion', 'citrus']
+
+        </pre>
+    </code>
+
+    <h3>3. <code> Array.pop()</code></h3>
+
+    <p>remove the last element from the array and takes O(1)</p>
+
+    <code>
+        <pre>
+            let fruits = ['mangoes','kiwi' , 'passion'];
+            fruits.pop();
+
+
+            //output : ['mangoes', 'kiwi']
+        </pre>
+    </code>
+
+
+    <h3> 4. <code>Array.toString()</code></h3>
+    <p>This method converts an Array to string separated by commas</p>
+
+    <code>
+        <pre>
+            let fruits = ['mangoes','kiwi' , 'passion'];
+            console.log(fruits.toString());
+        </pre>
+    </code>
+    
+
+
+    <script src="array.js"></script>
+</body>
+</html>
