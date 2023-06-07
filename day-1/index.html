@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1</title>
+</head>
+<body>
+    <h1>Day 1</h1>
+
+    <p>This tutorial is about objects and there methods</p>
+
+    <h4>1. <code>Object.Keys()</code></h4>
+    <p> this method returns an arry of objects properties</p>
+
+    <code> <pre>
+        const person = { 
+            name: 'John',
+            age: 30,
+            gender: 'male'
+          };
+          
+          const keys = Object.keys(person);
+          console.log(keys);  // Output: ['name', 'age', 'gender']
+    </pre>  </code>
+
+
+    <h4>2. <code>Object.assign(target, source)</code></h4>
+    <p>this method concatenates two objects and returns as one.</p>
+
+    <code><pre>
+        const target = {
+            a : 1,
+            b:2
+        }
+        
+        const source ={
+            d:3,
+            e : 4
+        }
+        var full = Object.assign(target,source);
+        console.log(full);
+
+        output : <output>{a: 1, b: 2, d: 3, e: 4}</output>
+    
+        </pre>
+    </code>
+
+
+    <h4>3. <code>Object.Entries()</code></h4>
+
+    <p>this method returns an array of KEY : VALUE pairs</p>
+
+    <code>
+        <pre>
+
+            const obj1 = {
+                name : 'Michael bechuana',
+                age : 21
+                school : 'jkuat',
+                joined : 2021
+            }
+
+            var entries =   Object.entries(obj1);
+            console.log(entries);
+        </pre>
+            output : <output>0
+                : 
+                (2) ['name', 'Michael bechuana']
+                1
+                : 
+                (2) ['age', 21]
+                2
+                : 
+                (2) ['school', 'jkuat']
+                3
+                : 
+                (2) ['joined', 2021]
+                length
+                : 
+                4</output>
+
+
+        
+    </code>
+
+    <h4>5. <code>Obj.hasOwnProperty('property');</code></h4>
+    <p> this method scheck if the specified field is in the object. it returns true or false</p>
+
+    <code>
+        <pre>
+            const obj1 = {
+                name : 'Michael bechuana',
+                age : 21,
+                school : 'jkuat',
+                joined : 2021
+            }
+
+            var property =  obj1.hasOwnProperty('property');
+            console.log(property);
+
+        </pre>
+    </code>
+
+    <h4>6. <code>Object.freeze(obj);</code></h4>
+    <p>This method make the object unaable to be altered, new properties added or removed</p>
+
+    <code>
+        <pre>
+            const person = {
+                name : 'michael',
+                age : 21
+            }
+            
+            Object.freeze(person);
+            
+            person.age = 12;  //this will ignored
+            console.log(person);
+
+        </pre>
+    </code>
+
+    <h4>7. <code>Object.freeze(obj);</code></h4>
+    <p>This method make the object able to be altered, new properties cannot be added or removed</p>
+
+    <code>
+        <pre>
+            const seal = {
+                name : 'micahel',
+                age : 16
+            }
+            
+            Object.seal(seal);
+            
+            seal.name = "Michael";
+            seal.age = 12;
+            seal.gender = 'male';   // This addition will be ignored
+            delete seal.name;  
+            
+            console.log(seal);
+            
+            //output {name: 'Michael', age: 12}
+            age : 12
+            name : "Michael"
+        </pre>
+    </code>
+
+
+
+
+
+
+
+
+
+    <script src="objects.js"></script>
+    
+</body>
+</html>
