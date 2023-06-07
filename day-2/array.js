@@ -36,3 +36,8 @@ console.log(two_D.flat()); //creates a new normal(1D array)
 
 console.log(two_D);
 
+
+
+//splice - adds new elements
+fruits.splice(2,0,'cola', 'watermelon');
+console.log(fruits);
