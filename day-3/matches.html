@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var subsets = function (nums) {
+    let result = [[]];
+
+    function recurse(index, currArr){
+        for(let i = index; i < nums.length; i++){
+            currArr.push(nums[i]);
+            result.push(currArr.slice());
+
+            recurse(i + 1, currArr);
+            currArr.pop();
+        }
+    }
+
+    recurse(0, []);
+    return result;
+};
+
+// Test case 1
+const nums1 = [1, 2, 3];
+console.log(subsets(nums1));
+    </script>
+</body>
+</html>
